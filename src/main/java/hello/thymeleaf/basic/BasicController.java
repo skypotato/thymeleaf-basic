@@ -22,6 +22,13 @@ public class BasicController {
         return "/basic/text-basic";
     }
 
+    @GetMapping("/text-unescaped")
+    public String textUnescaped(Model model) {
+        model.addAttribute("data", "Hello <b>Spring!</b>");
+
+        return "/basic/text-basic";
+    }
+
     @GetMapping("/variable")
     public String variable(Model model) {
         User userA = new User("userA", 10);
