@@ -11,7 +11,7 @@ public class BasicController {
 
     @GetMapping("/text-basic")
     public String textBasic(Model model){
-        model.addAttribute("data", "Hello Spring!");
+        model.addAttribute("data", "Hello <b>Spring!</b>");
 
         return "/basic/text-basic";
     }
