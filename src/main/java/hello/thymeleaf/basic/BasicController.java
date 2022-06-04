@@ -37,7 +37,7 @@ public class BasicController {
 
         model.addAttribute("user", userA);
         model.addAttribute("users", list);
-        model.addAttribute("map", map);
+        model.addAttribute("userMap", map);
 
         return "/basic/variable";
     }
