@@ -10,6 +10,6 @@ public class TemplateController {
 
     @GetMapping("/fragment")
     public String template(){
-        return "template/fragment/fragnebtMain";
+        return "template/fragment/fragmentMain";
     }
 }
